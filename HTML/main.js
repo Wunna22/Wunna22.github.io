@@ -1,1 +1,1 @@
-alert("HELLO HTML")
+alert("HELLO HTML!")
