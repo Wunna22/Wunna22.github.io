@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 1</title>
+</head>
+<body>
+    <script>
+        //Variable
+        var a = 13; //Global Variable
+        console.log(a);
+        let b = 22; //Block Scope Variable
+        console.log(b);
+        const c = 33; //Constant Variable
+        console.log(c);
+        
+        a = 103;
+        console.log(a);
+        b = 202;
+        console.log(b);
+        /*
+        c = 303;
+        console.log(c); */
+
+        //Variable Scope
+        var x = 12;
+        if(x == 12){
+           var num1 = 12;
+           let num2 = 15;
+        }
+        console.log(num1);
+        //console.log(num2);
+ 
+        let i; //undefied
+        console.log(i);
+
+        let j = null; //Null
+        console.log(j);
+
+        //addition operator (+)
+        let three = 1+2;
+        console.log(three);
+        let ans = three + 1;
+        console.log(ans);
+
+        //substraction operator (-)
+        let sub = 5 - 2;
+        console.log(sub);
+
+        //multiplication operator (*)
+        let mul1 = 5*3;
+        console.log(mul1);
+        let mul2 = -1 * 2;
+        console.log(mul2);
+
+        //Exponentitation operator (**)
+        let exp1 = 2**2;
+        console.log(exp1);
+        let exp2 = 3**6
+        console.log(exp2);
+        
+
+        //division operator (/)
+        let div1 =  20/5;
+        console.log(div1);
+        let div2 = 20/7;
+        console.log(div2);
+        let div3 = 1/0;
+        console.log(div3);
+
+        //Remainder (%)
+        let rem1 = 24%5;
+        console.log(rem1);
+        let rem2 = 1%0;
+        console.log(rem2);
+
+        //Precendence ( * / % )( + - )(=)
+        let  total= 1 * 2 + 5 / 2 % 2;
+        console.log(total);
+
+        //Comparisons
+        let n = 12;
+        let m = "12";
+        console.log(typeof(n));
+        console.log(typeof(m));
+        console.log(n<15);
+        console.log(n<10);
+        console.log(n>5);
+        console.log(n<=15);
+        console.log(n<=12);
+        console.log(n>=1);
+        console.log(n==m);
+        console.log(n===m);
+        console.log(n!=m);
+        console.log(n!==m);
+
+        //one line writing
+        if(1==1)console.log("1 is equal to 1")
+
+        //If example
+        let input = prompt("Enter number: ");
+        console.log(input);
+        if(input<50){
+            document.write(input+" is less than 50");
+        }
+        else if(input3==50){
+            document.write(input+" is equal to 50");
+        }
+        else{
+            document.write(input+" is greater than 50");
+        }
+    </script>
+</body>
+</html>
