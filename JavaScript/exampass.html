@@ -8,21 +8,36 @@
 </head>
 <body>
     <h1>Exam Result</h1>
-    <form name="my Form">
+    <form name="MyForm">
         <label for="c">Turbo C</label>
-         <input type="number" name="c" placeholder="Enter TurboC marks: " required> <br><br>
+         <input type="number" name="c" placeholder="Enter marks " required> <br><br>
         <label for="java">Java</label>
-         <input type="number" name="java" placeholder="Enter Java marks: " required> <br><br>
-        <label for="javascript">JavaScript</label>
-         <input type="number" name="javascript" placeholder="Enter JavaScaript marks" required> <br><br>
+         <input type="number" name="java" placeholder="Enter marks " required> <br><br>
+        <label for="js">JavaScript</label>
+         <input type="number" name="js" placeholder="Enter marks" required> <br><br>
         <button type="button" onclick="result()">Result</button>
     </form>
 
     <script>
         function result(){
-            alert("Hello");
-        }
-        
+            
+            let c = document.MyForm.c.value;
+            console.log(c);
+            let java = document.MyForm.java.value;
+            console.log(java);
+            let js = document.MyForm.js.value;
+            console.log(js);
+
+            if(50<=c>80 || 50<=java>80 || 50<=js>80){
+                document.write("<h1>Distinction!</h1>");
+            }
+            else if(c>=50 && java>=50 && js>=50){
+                document.write("<h1>Passed!</h1>");     
+            }
+            else{
+                document.write("<h1>Fail!</h1>");
+            }  
+        } 
     </script>
-</body>
-</html>
+</body> 
+</html>    
