@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Test</title>
+    <style>
+        script{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Menu</h1>
+    <div>
+        <p>(1) Celsius to Fahrenheit</p>
+        <p>(2) Fahrenheit to Celsius</p>
+    </div>
+    <form name= "tempTest">
+        <label for="choice">Choice</label>
+         <select name="choice" id="choice">
+             <option value="1">1</option>
+             <option value="2">2</option>
+         </select> <br><br>
+        <label for="start">Start</label>
+         <input type="number" name="start" placeholder="Enter degree" required><br><br>
+        <label for="step">Step</label>
+         <input type="number" name="step" placeholder="Enter degree" required><br><br>
+        <label for="end">End</label>
+         <input type="number" name="end" placeholder="Enter degree" required><br><br>
+        <button type="button" onclick="submit()">Submit</button>
+    </form>
+    
+    <script>
+        function submit() {
+            let choice = document.tempTest.choice.value
+            console.log(choice);
+            
+            
+        }
+    </script>
+</body>
+</html>

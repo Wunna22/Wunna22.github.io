@@ -7,7 +7,7 @@
     <title>Exam Pass</title>
 </head>
 <body>
-    <h1>Exam Result</h1>
+    <h3>Exam Result</h3>
     <form name="MyForm">
         <label for="c">Turbo C</label>
          <input type="number" name="c" placeholder="Enter marks " required> <br><br>
@@ -21,23 +21,96 @@
     <script>
         function result(){
             
-            let c = document.MyForm.c.value;
-            console.log(c);
-            let java = document.MyForm.java.value;
-            console.log(java);
-            let js = document.MyForm.js.value;
-            console.log(js);
+           let c = document.MyForm.c.value;
+           console.log(c);
+           let java = document.MyForm.java.value;
+           console.log(java);
+           let js = document.MyForm.js.value;
+           console.log(js);
 
-            
-            if(c<50 || java<50 || js<50){
-                document.write("<h1>Fail!</h1>");
-            }  
-            else if(c>=50 && c>80 || java>=50 && java>80 || js>=50 && js>80){
-                document.write("<h1>Distinction!</h1>");
+           if(c>=50 && java>=50 && js >= 50 ){ 
+                if(c>80 && java>80 && js>80){
+                   document.write(`<h1>With Congrat, you pass all the languages with Distinction!<h1>`);
+                   document.write(`<h3>Distinction in TurboC with ${c} marks.</h3>`);
+                   document.write(`<h3>Distinction in Java with ${java} marks.</h3>`);    
+                   document.write(`<h3>Distinction in JavaScript with ${js} marks.</h3>`);  
+                }
+                else if(c>80 && java>80 || c>80 && js>80 || java>80 && js>80){
+                    if(c>80 && java>80){
+                       document.write(`<h3>Distinction in TurboC with ${c} marks.</h3>`);
+                       document.write(`<h3>Distinction in Java with ${java} marks.</h3>`);
+                    }
+                    else if(c>80 && js>80){
+                       document.write(`<h3>Distinction in TurboC with ${c} marks.</h3>`);
+                       document.write(`<h3>Distinction in JavaScript with ${js} marks.</h3>`);
+                    }
+                    else{
+                       document.write(`<h3>Distinction in Java with ${java} marks.</h3>`);
+                       document.write(`<h3>Distinction in JavaScript with ${js} marks.</h3>`);
+                    }
+                }
+                else if(c>80 || java>80 || js>80){
+                    if(c>80){
+                       document.write(`<h3>Distinction in TurboC with ${c} marks.</h3>`);
+                    }
+                    else if(java>80){
+                       document.write(`<h3>Distinction in Java with ${java} marks.</h3>`);
+                    }
+                    else{
+                       document.write(`<h3>Distinction in JavaScript with ${js} marks.</h3>`);
+                    }
+                }
+                else{
+                   document.write("<h1>Great!You pass all the languages.</h1>");
+                   document.write(`<h3>Pass the TurboC with ${c} marks.</h3>`);
+                   document.write(`<h3>Pass the  Java with ${java} marks.</h3>`);
+                   document.write(`<h3>Pass the JavaScript with ${js} marks.</h3>`);
+                }
             }
             else{
-                document.write("<h1>Passed!</h1>");     
+                if(c<50 && java<50 && js<50){
+                   document.write(`<h1>Sorry! You really need to try hard.</h1>`);
+                   document.write(`<h3>Fail in TurboC with ${c} marks.</h3>`);
+                   document.write(`<h3>Fail in Java with ${java} marks.</h3>`);                 
+                   document.write(`<h3>Fail in JavaScript with ${js} marks.</h3>`);
+                }
+                else if(c<50 && java<50 || c<50 && java<50 || java<50 && js<50){
+                    if(c<50 && java<50){
+                       document.write(`<h3>Fail in TurboC with ${c} marks.</h3>`);
+                       document.write(`<h3>Fail in Java with ${java} marks.</h3>`);
+                    }
+                    else if(c<50 && java<50){
+                        document.write(`<h3>Fail in TurboC with ${c} marks.</h3>`);
+                        document.write(`<h3>Fail in JavaScript with ${js} marks.</h3>`);
+                    }
+                    else{
+                        document.write(`<h3>Fail in Java with ${java} marks.</h3>`);
+                        document.write(`<h3>Fail in JavaScript with ${js} marks.</h3>`);
+                    }
+                }
+                else{
+                    if(c<50){                        
+                        document.write(`<h3>Fail in TurboC with ${c} marks.</h3>`);
+                    }
+                    else if(java<50){
+                        document.write(`<h3>Fail in Java with ${java} marks.</h3>`);
+                    }
+                    else{
+                        document.write(`<h3>Fail in JavaScript with ${js} marks.</h3>`);
+                    }
+                }
+            }  
+
+            /*if(c<50 || java<50 || js<50){
+                document.write("<h3>Fail!</h3>");
+            }  
+            else if(c>=50 && c>80 || java>=50 && java>80 || js>=50 && js>80){
+                document.write("<h3>`<h3>Distinction!</h3>");
             }
+            else{
+                document.write("<h3>Passed!</h3>");     
+            }
+            */
         } 
     </script>
 </body> 
