@@ -19,26 +19,42 @@
     </div>
     <form name= "tempTest">
         <label for="choice">Choice</label>
-         <select name="choice" id="choice">
-             <option value="1">1</option>
-             <option value="2">2</option>
-         </select> <br><br>
+         <input type="number" name="choice" placeholder="1/2" required> <br><br>
         <label for="start">Start</label>
          <input type="number" name="start" placeholder="Enter degree" required><br><br>
         <label for="step">Step</label>
          <input type="number" name="step" placeholder="Enter degree" required><br><br>
         <label for="end">End</label>
          <input type="number" name="end" placeholder="Enter degree" required><br><br>
-        <button type="button" onclick="submit()">Submit</button>
+        <button type="button" onclick="result()">Result</button>
     </form>
     
     <script>
-        function submit() {
-            let choice = document.tempTest.choice.value
-            console.log(choice);
+        function result() {
+            let choice = document.tempTest.choice.value;
             
+            let Step = document.tempTest.step.value;
+            
+            let End = document.tempTest.end.value;
+            console.log(End);
+
+            if(choice==1){
+                let C1 = document.tempTest.start.value;
+                console.log(C1);
+                while(C1<End){
+                    let F1 = C1*9 /5 + 32;
+                    console.log(F1);
+                    C1 = Step + 1;
+                    document.write(`<h1>Celsiuc \t \t Fahrenheit</h1>`);
+                    document.write(`<h3>${C1} \t \t ${F1}</h3>`);
+                }
+            }
+            else{
+
+            }
             
         }
+         
     </script>
 </body>
 </html>
