@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Table</title>
+</head>
+<body>
+    <label for="name">Name</label>
+     <input type="text" id="name" required> <br><br>
+   
+    <label for="age">Age</label>
+     <input type="number" id="age" required> <br><br>
+
+    <button onclick="show_data()">Show</button> <br><br>
+     <table border="1" cellspacing="0" cellpadding="15">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            
+        </tbody>
+    </table>
+      
+    <script>
+        let i = 1;
+        function show_data() {
+                              
+            
+            let input_Data = [{
+                name: document.getElementById('name').value,
+                age: document.getElementById('age').value
+            }];
+            
+            let tbody = document.querySelector('#tbody');
+            let tData = document.createElement('tr');
+            
+            let data = '';
+            
+            for( let row of input_Data){          
+                data =                                               
+                `<td>${i++}</td>
+                 <td>${row.name}</td>
+                 <td>${row.age}</td>`
+            };
+            tData.innerHTML = data;
+            tbody.appendChild(tData); 
+            
+        }       
+    </script>
+</body>
+</html>
