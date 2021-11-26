@@ -30,8 +30,6 @@
     <script>
         let i = 1;
         function show_data() {
-                              
-            
             let input_Data = [{
                 name: document.getElementById('name').value,
                 age: document.getElementById('age').value
@@ -42,7 +40,7 @@
             
             let data = '';
             
-            for( let row of input_Data){          
+            for(let row of input_Data){          
                 data =                                               
                 `<td>${i++}</td>
                  <td>${row.name}</td>
