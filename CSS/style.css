@@ -1,4 +1,4 @@
-h3{
+h1{
     color:#ff0000; /*(Hex code) red green blue */
     /*color: rbg(255,0,0);*/
     text-align: center;
@@ -26,4 +26,47 @@ h4{
 a[title="google"]{
     color: black;
     text-decoration: none;
+}
+
+/* Id Selector*/
+#idSelector{
+ color: red;
+}
+
+/* Class Selector */
+.one{
+    color: green;
+    word-spacing: 30px;
+    letter-spacing: 10px;
+}
+
+/* Descendent Selector*/
+.dec a{
+    color: red;
+}
+
+/* Child Selector */
+.child > a{
+    color: blue;
+}
+
+/* Pseudo Selector */
+a:link{
+    color:red;
+}
+a:hover{
+    color: green;
+}
+a:active{
+    color: yellow;
+}
+a:visited{
+    color: orange;
+}
+
+/* Target */
+:target{
+    color: purple;
+    font-size: 30px;
+    line-height: 50px;
 }
