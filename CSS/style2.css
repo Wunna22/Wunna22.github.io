@@ -1,0 +1,65 @@
+h1{text-align: center;}
+
+/* Margin */
+/* T R B L */
+/* T L&R B */
+/* T&B L&R */
+.margin1{
+    border: 1px solid black;
+    margin: 15px;
+}
+.margin2{
+    border: 1px solid blue;
+    margin: 10px 20px;
+}
+
+/* Padding */
+.padding{
+    border: 1px solid black;
+    padding: 40px; /* all four*/
+    /* T R B L */
+    /* T L&R B */
+    /* T&B L&R */
+}
+
+/* Layout */
+/* Inline */
+.inline{
+    border: 1px solid red;
+    display: inline-block;
+    width: 400px;
+}
+
+/* Block */
+.block{
+    border: 1px solid red;
+    width: 400px;
+    height: 50px;
+    display: inline-block;
+}
+/* Can use "display" to change each other */
+
+/* Float */
+div.floatleft img{
+    width: 40%;
+    height: 400px;
+    float: left;
+}
+div.clear{
+    clear: both;
+}
+div.floatright img{
+    width: 40%;
+    float: right;
+}
+
+/* Grid */
+.grid1 div{
+    padding: 20px;
+    text-align: center;
+}
+
+.grid1{
+    display: grid;
+    grid-template-columns: auto 700px auto;
+}
