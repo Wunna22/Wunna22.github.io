@@ -1,0 +1,53 @@
+h1{
+    text-align: center;
+    color: red;
+}
+
+/* Position */
+.relative_parent{
+    border: 3px solid black;
+    width: 1000px;
+    height: 700px;
+}
+.relative{
+    border: 2px solid red;
+    width: 500px;
+    position: relative;
+    top: 70px;
+    left: 100px;
+}
+
+.absolute_parent{
+    border: 3px solid blue;
+    width: 1000px;
+    height: 700px;
+}
+.absolute{
+    border: 2px solid green;
+    width: 600px;
+    position: absolute;
+    /* position: relative; */
+    top: 50px;
+    left: 150px;
+}
+
+.fixed{
+    position: fixed;
+    top: 100px;
+    left: 1050px;
+}
+
+/* fonts */
+/* Online */
+.online{
+    font-family: 'gwendolyn', cursive;
+}
+
+/* Offline */
+@font-face {
+    font-family: aclonica;
+    src: url(Aclonica/Aclonica-Regular.ttf);
+}
+.offline{
+    font-family: aclonica;
+}

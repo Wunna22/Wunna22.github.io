@@ -54,12 +54,30 @@ div.floatright img{
 }
 
 /* Grid */
-.grid1 div{
+.grid1 div, .grid2 div, .grid3 div, .grid4 div, .grid5 div, .grid6 div{
     padding: 20px;
     text-align: center;
 }
-
-.grid1{
+.grid1, .grid2, .grid3, .grid4, .grid5, .grid6{
     display: grid;
-    grid-template-columns: auto 700px auto;
+    grid-template-columns: auto auto auto;
+}
+
+.grid2{
+    grid-column-gap: 50px;
+}
+.grid3{
+    grid-row-gap: 30px;
+}
+.grid4{
+    grid-gap: 40px;
+}
+
+.grid5 .columnadd{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.grid6 .rowadd{
+    grid-row-start: 1;
+    grid-row-end: 3;
 }

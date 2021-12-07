@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face{
+    font-family: lobster;
+    src: url(../Lobster/Lobster-Regular.ttf);
+}
+/* Nav*/
+.logo{
+    width: 100px;
+    height: 70px;
+    margin-left: 50px;
+}
+.name{
+    margin-top: -60px;
+    margin-left: 100px;
+    font-weight: bolder;
+    font-family: lobster;
+    font-size: 25px;
+}
+.brand{
+    display: inline-block;
+}
+.nav ul{
+    float: right;
+}
+.nav ul li{
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+.nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;  
+}
+.nav ul li a:hover{
+    color: rgb(21, 162, 209);
+    letter-spacing: 3px;
+    transition-duration: 0.5s;
+}
+.nav{
+    height: 100px;
+}
+.clear{
+    clear: both;
+}
+
+/* Background */
+.img{
+    height: 550px;
+    width: 100%;
+}
+
+.background_text{
+    position: absolute;
+    top: 250px;
+    left: 80px;
+}
+.welH{
+    font-family: lobster;
+    font-weight: unset;
+    margin-bottom: 30px;
+}
+.welText{
+    line-height: 30px;
+}
+.shop{
+    padding: 10px 20px;
+    color: rgb(21, 162, 209);
+    border: 1px solid rgb(21, 162, 209);
+    border-radius: 7px;
+    margin-top: 30px;
+}
+.shop:hover{
+    color: white;
+    background-color: rgb(21, 162, 209);
+}
