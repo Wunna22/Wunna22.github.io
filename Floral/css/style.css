@@ -5,8 +5,13 @@
 
 @font-face{
     font-family: lobster;
-    src: url(../Lobster/Lobster-Regular.ttf);
+    src: url(../fonts/Lobster-Regular.ttf);
 }
+@font-face {
+    font-family: readexpro;
+    src: url(../fonts/ReadexPro-Regular.ttf);
+}
+
 /* Nav*/
 .logo{
     width: 100px;
@@ -78,4 +83,77 @@
 .shop:hover{
     color: white;
     background-color: rgb(21, 162, 209);
+}
+
+/* Start Products */
+.head{
+    text-align: center;
+    padding-top: 50px;
+}
+.hr{
+    max-width: 120px;
+    margin: auto;
+    border: 2px solid rgb(21, 162, 209);;
+}
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 50px;
+    grid-gap: 40px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.flowers{
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgb(133, 141, 145);
+}
+.dis{
+    color: red;
+}
+
+/* ABout */
+.about{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    margin-top: 80px;
+    background-image: url(../images/back.jpg);
+    color: white;
+}
+.about div{
+    padding: 60px 0px;
+}
+.hr1{
+    max-width: 40px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid;
+}
+
+.packaging{
+    padding: 80px;
+}
+.readex1{
+    font-family: readexpro;
+}
+.readex{
+    font-family: readexpro;
+    text-transform: uppercase;
+}
+.pack img{
+    float: left;
+    height: 400px;
+    width: 45%;
+    margin-right: 50px;
+}
+.pack{
+    padding: 30px 0px;
+}
+.pack_text{   
+    line-height: 30px;
+}
+.clear1{
+    clear: both;
 }
