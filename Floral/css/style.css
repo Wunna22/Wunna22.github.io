@@ -8,8 +8,20 @@
     src: url(../fonts/Lobster-Regular.ttf);
 }
 @font-face {
-    font-family: readexpro;
-    src: url(../fonts/ReadexPro-Regular.ttf);
+    font-family: rubik;
+    src: url(../fonts/Rubik-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: dancing;
+    src: url(../fonts/DancingScript-Regular.ttf);
+}
+@font-face {
+    font-family: balsa;
+    src: url(../fonts/BalsamiqSans-Regular.ttf);
+}
+@font-face {
+    font-family: ptsans;
+    src: url(../fonts/PTSans-Regular.ttf);
 }
 
 /* Nav*/
@@ -53,7 +65,6 @@
 .clear{
     clear: both;
 }
-
 /* Background */
 .img{
     height: 550px;
@@ -132,28 +143,333 @@
     border: 2px solid;
 }
 
+/* Packaging */
 .packaging{
-    padding: 80px;
+    margin-top: 80px;
+    margin-left: 100px;
 }
-.readex1{
-    font-family: readexpro;
-}
-.readex{
-    font-family: readexpro;
-    text-transform: uppercase;
-}
-.pack img{
+.packaging img{
+    border-radius: 5px;
     float: left;
-    height: 400px;
     width: 45%;
+    height: 400px;
     margin-right: 50px;
-}
-.pack{
-    padding: 30px 0px;
+    margin-top: 30px;
 }
 .pack_text{   
     line-height: 30px;
+    margin-top: 30px;
+    position: relative;
+    left: 40px;
+    width: 90%;
+    text-align: justify;
+}
+.pack_head{
+    font-family: rubik;
+}
+#icon{
+    margin-right: 5px;
 }
 .clear1{
     clear: both;
+}
+
+/* Support */
+.support_icon p{
+    display: inline-block;
+    margin-left: 30px;
+    font-family: rubik;
+}
+.support{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 80px;
+    background-color: rgb(231, 249, 255);
+    padding: 40px 30px;
+}
+/* for ABT page */
+.support1{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(231, 249, 255);
+    padding: 40px 30px;
+}
+
+
+/* Footer */
+.footer{
+    height: 230px;
+    background-color: rgb(36, 34, 34)
+}
+.footer_nav{
+    display: inline-block;
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+    padding: 50px 20px 0px;
+}
+.design{
+    color: white;
+    margin-top: 30px;
+}
+.sicon{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 20px;
+    color: white;
+}
+
+
+
+/* Contact Page */
+/* head */
+.con1{
+    text-align: center;
+    background: url(../images/pexels-porapak-apichodilok-371052.jpg);
+    padding: 100px 0px;
+    background-repeat: no-repeat;
+    font-family: balsa;   
+}
+.con1 div p{
+    text-align: center;
+    line-height: 20px;
+}
+.con1 div hr{
+    max-width: 120px;
+    margin: auto;
+    border: 4px solid rgb(95, 85, 243);
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+/* Body */
+.conc{
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    grid-column-gap: 80px;
+}
+.conc1{
+    box-shadow: 0px 10px 5px rgb(215, 226, 231);
+    margin-top: -50px;  
+    border: 3px #a19ceb inset;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    -webkit-box-fill-color: transparent;
+    font-family: balsa;
+}
+.guide{
+    padding: 30px 20px;
+    text-align: center;
+    color: rgb(95, 85, 243);
+}
+.guide p, .guide small{ 
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: black;
+}
+/* Body-Message */
+.box div{
+    width: 60%;
+    height: 500px;
+    margin: auto;
+    margin-top: 80px; 
+    box-shadow: 0px 10px 20px;
+    padding: 50px;
+    background: url(../images/box.jpg) no-repeat center center;
+    font-family: balsa;
+}
+.box div h1{
+    color: white;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.box div h3{
+    color: white;
+    margin-bottom: 30px;
+}
+input[type="text"],input[type="email"]{
+    width: 50%;
+    height: 30px;
+    outline: none;
+    border-radius: 10px;
+    font-family: balsa;
+}
+input[type="text"]:hover, input[type="email"]:hover, textarea:hover{
+    border: 2px inset rgb(21, 162, 209);
+    font-family: balsa;
+}
+#message{
+   width: 50%;
+   height: 100px;
+   outline: none;
+   border-radius: 10px;
+   font-family: balsa;
+}
+.button{
+    padding: 10px 80px;   
+    letter-spacing: 3px;
+    border-radius: 10px;  
+    margin-top: 50px;
+    background-color: whitesmoke;
+    box-shadow: 0px 6px 20px -5px;
+    font-family: balsa;
+}
+.button:hover{
+    background-color: rgb(21, 162, 209);   
+}
+
+
+
+/* About Page */
+.abt div{
+    text-align: center;
+    width: 100%;
+    color: white;
+    padding: 100px 0px;
+    background: url(../images/abt.jpg) no-repeat;
+    background-size: cover;
+    font-family: lobster;
+    
+}
+.page{
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    font-family: dancing;   
+}
+.abt_box1, .abt_box2, .abt_box3{
+    padding: 50px 100px 0px;
+   
+}
+.abt_box1 img, .abt_box3 img{
+    width: 300px;
+    height: 400px;
+    float: left;
+    margin-right: 60px;
+}
+.abt_box2 img{
+    width: 300px;
+    height: 400px;
+    float: right;
+    margin-left: 60px;
+}
+.abt_box1 div, .abt_box2 div, .abt_box3 div{
+    
+    line-height: 35px;
+    text-align: justify;
+    color: rgb(187, 48, 101);
+}
+.abt_box1 div h2, .abt_box2 div h2, .abt_box3 div h2{
+    margin-bottom: 20px;
+    font-family: lobster;
+}
+.abt_box3{
+    margin-bottom: 30px;
+}
+.lb1, .lb2{
+    max-width: 80%;
+    margin: auto;
+    border: 2px solid rgb(187, 48, 101);
+}
+.lb2{
+    margin-bottom: 50px;
+}
+.clear_abt{
+    clear: both;
+}
+
+
+/* Shop Page */
+.cm{
+    background-color: rgb(231, 26, 37);
+    height: 250px;
+}
+.cm div{
+    padding: 40px 0px 0px 80px; 
+    font-family: ptsans; 
+    text-align: justify;
+    text-transform: uppercase;
+
+    color: white;
+}
+.cm div small p{
+    font-size: 40px;
+}
+.cm:hover{
+    box-shadow: 0px 20px 10px gray;
+}
+.search_box {   
+    padding: 30px 0px;
+    width: 70%;
+    margin: auto;
+}
+.search{
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    letter-spacing: 3px;
+}
+.shop_search{
+    width: 5%;
+    height: 35px;
+    border-radius: 5px;
+}
+.shop_search:hover{
+    background-color: rgb(77, 118, 231);
+}
+ 
+.shop_page{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-family: dancing;
+}
+.bouquets{
+    color: white;
+    padding: 20px 0px;
+    background-color: rgb(201, 98, 137);
+    font-family: dancing;
+}
+.christmas{
+    padding: 20px 0px;
+    color: white;
+    background-color: rgb(231, 26, 37);
+    font-family: dancing;
+}
+.indoor{
+    padding: 20px 0px;
+    color: white;
+    background-color: rgb(56, 161, 83);
+}
+.first, .second, .third{
+    background-color: white;
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+.first div img, .second div img, .third div img{
+    height: 300px;
+    width: 300px;
+   
+}
+.first div, .second div, .third div{
+    box-shadow: 0px 0px 5px;
+}
+.nap{
+    border: 0.5px solid black;
+    padding: 10px 0px;
+}
+.nap h3{
+    margin-bottom: 10px;
+}
+.shophr{
+    border: 1px inset rgb(31, 33, 34);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.ofs{
+    color: red;
 }
